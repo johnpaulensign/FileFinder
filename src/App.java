@@ -5,7 +5,7 @@ public class App {
     Rule size = SizeRule.get(2.5f, SizeRule.KB);
     Rule lastModified = ModifyRule.get(2020, 8, 1, 0, 0, 0);
 
-    FileFinder ff = new FileFinder("/Users/johnpaul/Documents/");
+    FileFinder ff = new FileFinder(System.getProperty("user.home") + "/Desktop");
 
     System.out.println("Found " + ff.getFiles().size() + " file(s).");
 
